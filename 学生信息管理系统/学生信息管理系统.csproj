@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E946C663-54A7-4256-8B19-A4BE349CE6F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StudentManager</RootNamespace>
+    <AssemblyName>StudentManager</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\StudentManager\Setup\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>学生信息管理系统.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutMe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutMe.Designer.cs">
+      <DependentUpon>AboutMe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddClass.Designer.cs">
+      <DependentUpon>AddClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassesInfo.Designer.cs">
+      <DependentUpon>ClassesInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddScore.Designer.cs">
+      <DependentUpon>AddScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBaseHelper.cs" />
+    <Compile Include="EditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditForm.Designer.cs">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProperty.Designer.cs">
+      <DependentUpon>FormProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewStudentForm.Designer.cs">
+      <DependentUpon>NewStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderScore.Designer.cs">
+      <DependentUpon>OrderScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrgSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrgSetForm.Designer.cs">
+      <DependentUpon>OrgSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchClass.Designer.cs">
+      <DependentUpon>SearchClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetSubject.Designer.cs">
+      <DependentUpon>SetSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subjects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subjects.Designer.cs">
+      <DependentUpon>Subjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TypesSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TypesSetForm.Designer.cs">
+      <DependentUpon>TypesSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLoginForm.Designer.cs">
+      <DependentUpon>UserLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagement.Designer.cs">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutMe.resx">
+      <DependentUpon>AboutMe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddClass.resx">
+      <DependentUpon>AddClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddScore.resx">
+      <DependentUpon>AddScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesInfo.resx">
+      <DependentUpon>ClassesInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditForm.resx">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProperty.resx">
+      <DependentUpon>FormProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewStudentForm.resx">
+      <DependentUpon>NewStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderScore.resx">
+      <DependentUpon>OrderScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrgSetForm.resx">
+      <DependentUpon>OrgSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SearchClass.resx">
+      <DependentUpon>SearchClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetSubject.resx">
+      <DependentUpon>SetSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subjects.resx">
+      <DependentUpon>Subjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TypesSetForm.resx">
+      <DependentUpon>TypesSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserLoginForm.resx">
+      <DependentUpon>UserLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement.resx">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon\删除.png" />
+    <Content Include="icon\属性.png" />
+    <Content Include="icon\新建.png" />
+    <Content Include="icon\编辑.png" />
+    <Content Include="icon\退出.png" />
+    <Content Include="pic\价值属性.png" />
+    <Content Include="pic\删除.png" />
+    <Content Include="pic\女性.png" />
+    <Content Include="pic\新建.png" />
+    <Content Include="pic\男性.png" />
+    <Content Include="pic\编辑.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
